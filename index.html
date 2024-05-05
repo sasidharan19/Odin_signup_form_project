@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+</head>
+<body>
+    <div class="sidebar">
+        <figure class="imageContainer">
+            <img class="image" src="images/studio-dekorasyon-vngzm4P2BTs-unsplash.jpg" alt="green tress">
+            <figcaption class="imageCaption"> Photo by &nbsp <a class="captionLink" href="https://unsplash.com/@t_t?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash"> Studio Dekorasyon </a> &nbsp on &nbsp <a class="captionLink" href="https://unsplash.com/photos/gray-concrete-road-top-between-green-trees-vngzm4P2BTs?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Unsplash</a> </figcaption>
+        </figure>
+    
+        <div class="odinIconContainer">
+            <img class="odinIcon" src="./images/odin-lined.png">
+            <h2 class="odinText"> ODIN </h2>
+        </div>
+    </div>
+    
+    <div class="formContainer">
+        <div class="topQuoteSection">
+            <h2 class="textInQuoteSection">This is not a real online service! You know you need something like this in your life to help you realize your deepest dreams. Sign up now to get started</h2>
+            <br>
+            <h2 class="textInQuoteSectionSecondLine">You know you want to.</h2>
+        </div>
+
+        <div class="formSection">
+            <h1 class="formHeading">Let's do this!</h1>
+            <br>
+            <form class="formContent">
+
+                <div class="inputPair">
+                    <label for="firstName">FIRST NAME</label>
+                    <input class="inputButton" type="text" id="firstName" name="firstName" />
+                </div>
+
+                <div class="inputPair marginRight">
+                    <label for="lastName">LAST NAME</label>
+                    <input class="inputButton" type="text" id="lastName" name="lastName" />
+                </div>
+
+                <div class="inputPair">
+                    <label for="email">EMAIL</label>
+                    <input class="inputButton" type="email" id="email" name="email" />
+                </div>
+
+                <div class="inputPair marginRight">
+                    <label for="phoneNumber">PHONE NUMBER</label>
+                    <input class="inputButton" type="tel" id="phoneNumber" name="phoneNumber" />
+                </div>
+                
+                <div class="inputPair">
+                    <label for="password">PASSWORD</label>
+                    <input class="inputButton" type="password" id="password" name="password" placeholder="Enter password"/>
+                </div>
+
+                <div class="inputPair marginRight">
+                    <label for="confirmPassword">CONFIRM PASSWORD</label>
+                    <input class="inputButton" type="password" id="confirmPassword" name="confirmPassword" placeholder="Confirm password"/>
+                </div>
+
+            </form>
+
+        </div>
+        <div class="passwordValidationContainer">
+            <div class="showPassword">
+                <label for="showPassword"></label>
+                <input type="checkbox" id="showPassword" onclick="passwordShow()"/>Show Password
+            </div>
+            
+            <div class="set">
+                <div class="count"> Length: 0 </div>
+            </div>
+            
+            <div class="check1">
+                <i class="far fa-check-circle" aria-hidden="true"></i> <span>Length more than 5.</span>
+            </div>
+            
+            <div class="check2">
+                <i class="far fa-check-circle" aria-hidden="true"></i> <span>Length less than 10.</span>
+            </div>
+        </div>
+        
+        
+
+    </div>
+
+
+
+    <script src="./scripts.js"></script>
+</body>
+</html>

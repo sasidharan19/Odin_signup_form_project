@@ -1,0 +1,153 @@
+/* reset */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+
+/* font */
+@font-face {
+    font-family: "Norse-bold";
+    src: url("./webfontkit-20240504-153754/norse-bold-webfont.woff") format("woff");
+    src: url("./webfontkit-20240504-153754/norse-bold-webfont.woff2") format("woff2");
+}
+
+/* image section */
+.image {
+    width: 100%;
+    height: 100vh;
+}
+
+.imageCaption {
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    bottom: 6px;
+    color: white;
+    width: 90%;
+    font-size: 11px;
+}
+
+.captionLink {
+    color: white;
+}
+
+.odinIconContainer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    width: 100%;
+    height: 20%;
+    top: 20%;
+    background-color: rgba(1,1,1,0.5);
+    background-size: 90px;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.odinText {
+    color:white;
+    font-family: "Norse-bold";
+    font-size: 4em;
+}
+
+.odinIcon {
+    width: 90px;
+    height: 80%;
+} 
+
+.sidebar {
+    position: relative;
+    width: 35%;
+    float: left;
+}
+
+/* Right side container */
+.formContainer {
+    display: flex;
+    flex-direction: column;
+}
+
+/* Top Quote section */
+.topQuoteSection {
+    height: 30vh;
+    background-color: #F5F5F5;
+    font-weight: bold;
+}
+
+.textInQuoteSection {
+    margin-top: 11vh;
+    margin-left: 5vh;
+    margin-right: 15vh;
+}
+
+.textInQuoteSectionSecondLine {
+    margin-left: 5vh;
+    margin-right: 15vh;
+}
+
+/* form section */
+.formSection {
+    height: 40vh;
+}
+
+.formHeading {
+    margin-left: 5vh;
+    font-weight: bold;
+    font-size: larger;
+}
+
+.formContent {
+    margin-left: 5vh;
+}
+
+input, label {
+    display:block;
+}
+
+.inputPair {
+    float: left;
+    margin-right: 11vh;
+    margin-bottom: 4vh;
+}
+
+.marginRight {
+    margin-right: 30vh;
+}
+
+.inputButton {
+    border-color: #E5E7EB;
+}
+
+input:invalid {
+    border-color:red;
+}
+
+input:focus {
+    border-color: blue;
+    box-shadow: 1px 1px 1px 1px;
+}
+
+.showPassword {
+    display: flex;
+    flex-direction: row;
+}
+.passwordValidationContainer {
+    display: block;
+}
