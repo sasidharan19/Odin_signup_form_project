@@ -54,21 +54,20 @@
                 
                 <div class="inputPair">
                     <label for="password">PASSWORD</label>
-                    <input class="inputButton" type="password" id="password" name="password" placeholder="Enter password"/>
+                    <input class="inputButton" type="password" id="password" name="password" placeholder="Enter password" onInput="check()"/>
                 </div>
 
                 <div class="inputPair marginRight">
                     <label for="confirmPassword">CONFIRM PASSWORD</label>
-                    <input class="inputButton" type="password" id="confirmPassword" name="confirmPassword" placeholder="Confirm password"/>
+                    <input class="inputButton" type="password" id="confirmPassword" name="confirmPassword" placeholder="Confirm password" />
                 </div>
-
             </form>
-
         </div>
+
         <div class="passwordValidationContainer">
             <div class="showPassword">
                 <label for="showPassword"></label>
-                <input type="checkbox" id="showPassword" onclick="passwordShow()"/>Show Password
+                <input type="checkbox" id="showPassword" onclick="passwordShow()" />Show Password
             </div>
             
             <div class="set">
@@ -82,13 +81,30 @@
             <div class="check2">
                 <i class="far fa-check-circle" aria-hidden="true"></i> <span>Length less than 10.</span>
             </div>
+
+            <div class="check3">
+                <i class="far fa-check-circle" aria-hidden="true"></i> <span>Contains numerical character.</span>
+            </div>
+
+            <div class="check4">
+                <i class="far fa-check-circle" aria-hidden="true"></i> <span>Contains special character.</span>
+            </div>
+
+            <div class="check5">
+                <i class="far fa-check-circle" aria-hidden="true"></i> <span>Shouldn't contain spaces.</span>
+            </div>
         </div>
         
-        
-
+        <div class="buttonContainer">
+            <div class="buttonDiv">
+                <button class="button" type="submit">Create Account</button>
+            </div>
+    
+            <div class="alreadySignedIn">
+                <p>Already have an account ?</p> <span><a href="url">Log in</a></span>
+            </div>
+        </div>
     </div>
-
-
 
     <script src="./scripts.js"></script>
 </body>

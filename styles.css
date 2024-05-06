@@ -20,6 +20,10 @@ time, mark, audio, video {
 	vertical-align: baseline;
 }
 
+body {
+    overflow: hidden;
+}
+
 /* font */
 @font-face {
     font-family: "Norse-bold";
@@ -86,13 +90,13 @@ time, mark, audio, video {
 
 /* Top Quote section */
 .topQuoteSection {
-    height: 30vh;
+    height: 23vh;
     background-color: #F5F5F5;
     font-weight: bold;
 }
 
 .textInQuoteSection {
-    margin-top: 11vh;
+    margin-top: 7vh;
     margin-left: 5vh;
     margin-right: 15vh;
 }
@@ -104,7 +108,7 @@ time, mark, audio, video {
 
 /* form section */
 .formSection {
-    height: 40vh;
+    height: 34vh;
 }
 
 .formHeading {
@@ -124,7 +128,7 @@ input, label {
 .inputPair {
     float: left;
     margin-right: 11vh;
-    margin-bottom: 4vh;
+    margin-bottom: 2vh;
 }
 
 .marginRight {
@@ -148,6 +152,53 @@ input:focus {
     display: flex;
     flex-direction: row;
 }
+
 .passwordValidationContainer {
     display: block;
+    height: 25vh;
+}
+
+.check1, .check2, .check3, .check4, .check5 {
+    position: relative;
+    color: red;
+    margin-bottom: 2px;
+}
+
+.count {
+    margin-top: 0.5vh;
+    margin-bottom: 0.5vh;
+}
+
+span {
+    margin-left:6px;
+}
+
+.passwordValidationContainer {
+    margin-left: 5vh;
+}
+
+/* button section */
+.buttonContainer {
+    background-color: #F5F5F5;
+}
+
+.buttonDiv, .alreadySignedIn{
+    margin-left: 5vh;
+    height: 9vh;
+}
+
+.alreadySignedIn {
+    display: flex;
+    margin-top: 2vh;
+}
+
+.button {
+    width: 160px;
+    height: 30px;
+    border-radius: 6px;
+    background-color: #596D48;
+    color: white;
+    margin-top: 2.5vh;
+    cursor:pointer;
+    border: none;
 }
